@@ -4,11 +4,11 @@ import Productshort from "@/components/Productshort";
 
 const ShopSection = () => {
   const categories = [
-    { id: 1, name: "CLOTHS", items: 5, image: "/card-item (1).png" },
-    { id: 2, name: "CLOTHS", items: 5, image: "/card-item (2).png" },
-    { id: 3, name: "CLOTHS", items: 5, image: "/card-item (3).png" },
-    { id: 4, name: "CLOTHS", items: 5, image: "/card-item.png" },
-    { id: 5, name: "CLOTHS", items: 5, image: "/col-md-4.png" },
+    { id: 1, name: "CLOTHS", items: 5, image: "/fixed-height (2).png" },
+    { id: 2, name: "CLOTHS", items: 5, image: "/alex-haigh-fEt6Wd4t4j0-unsplash.jpg" },
+    { id: 3, name: "CLOTHS", items: 5, image: "/fixed-height.png" },
+    { id: 4, name: "CLOTHS", items: 5, image: "/fixed-height (4).png" },
+    { id: 5, name: "CLOTHS", items: 5, image: "/fixed-height (1).png" },
   ];
 
   const logos = [

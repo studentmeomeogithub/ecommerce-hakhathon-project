@@ -30,10 +30,10 @@ export default function Navbar() {
           <Link href="/">Home</Link>
           </li>
           <li className="hover:text-blue-600">
-            <a href="/Shop">Shop</a>
+          <Link href="/Shop">Shop</Link>
           </li>
           <li className="hover:text-blue-600">
-            <a href="/About">About</a>
+          <Link href="/About">About</Link>
           </li>
           <li className="hover:text-blue-600">
             <a href="#">Blog</a>
