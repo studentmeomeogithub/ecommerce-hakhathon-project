@@ -1,51 +1,48 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { useState } from "react";
 import { FaHeart, FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import Image from "next/image"; // Correct import for Next.js images
-import img1 from "../assests/navbar-brand.png"
+import Image from "next/image";
+import img1 from "../assests/navbar-brand.png";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 w-full z-10">
+    <nav className="bg-white shadow-md fixed top-0 w-full z-50">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo Section */}
         <div className="flex items-center space-x-5">
-          <Image 
-            src={img1} // Ensure the image is in the public folder
-            alt="Bandage Logo"
-            width={140} // Adjust width
-            height={90} // Adjust height
+          <Image
+            src={img1} 
+            alt="Brand Logo"
+            width={140}
+            height={90}
             className="object-contain ml-6"
           />
-          {/* <span className="text-xl font-bold hidden sm:block">BrandName</span> */}
         </div>
 
         {/* Desktop Links Section */}
         <ul className="hidden md:flex space-x-6 text-gray-700 font-medium">
           <li className="hover:text-blue-600">
-          <Link href="/">Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li className="hover:text-blue-600">
-          <Link href="/Shop">Shop</Link>
+            <Link href="/Shop">Shop</Link>
           </li>
           <li className="hover:text-blue-600">
-          <Link href="/About">About</Link>
+            <Link href="/About">About</Link>
           </li>
           <li className="hover:text-blue-600">
-            <a href="#">Blog</a>
+            <Link href="/Blog">Blog</Link>
           </li>
           <li className="hover:text-blue-600">
             <Link href="/Contact">Contact</Link>
           </li>
-        
-
-<li className="hover:text-blue-600">
-  <Link href="#">Pages</Link>
-</li>
+          <li className="hover:text-blue-600">
+            <Link href="/Pages">Pages</Link>
+          </li>
         </ul>
 
         {/* Button & Icons Section */}
@@ -80,25 +77,25 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-gray-100 p-4">
+        <div className="md:hidden bg-gray-100 p-4 z-50">
           <ul className="space-y-2 text-gray-700 font-medium">
             <li className="hover:text-blue-600">
-              <a href="#">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li className="hover:text-blue-600">
-              <a href="#">Shop</a>
+              <Link href="/Shop">Shop</Link>
             </li>
             <li className="hover:text-blue-600">
-              <a href="#">About</a>
+              <Link href="/About">About</Link>
             </li>
             <li className="hover:text-blue-600">
-              <a href="#">Blog</a>
+              <Link href="/Blog">Blog</Link>
             </li>
             <li className="hover:text-blue-600">
-              <a href="#">Contact</a>
+              <Link href="/Contact">Contact</Link>
             </li>
             <li className="hover:text-blue-600">
-              <a href="#">Pages</a>
+              <Link href="/Pages">Pages</Link>
             </li>
           </ul>
         </div>
