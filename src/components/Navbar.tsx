@@ -35,9 +35,6 @@ export default function Navbar() {
             <Link href="/About">About</Link>
           </li>
           <li className="hover:text-blue-600">
-            <Link href="/Blog">Blog</Link>
-          </li>
-          <li className="hover:text-blue-600">
             <Link href="/Contact">Contact</Link>
           </li>
           <li className="hover:text-blue-600">
@@ -45,9 +42,9 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Button & Icons Section */}
+        {/* Button & Icons */}
         <div className="flex items-center space-x-4">
-          {/* Login/Register */}
+          {/* Login & Register */}
           <button className="hidden md:flex items-center space-x-2 bg-blue-600 text-white px-3 py-1 rounded-md hover:bg-blue-700">
             <FaUser />
             <span>Login</span>
@@ -87,9 +84,6 @@ export default function Navbar() {
             </li>
             <li className="hover:text-blue-600">
               <Link href="/About">About</Link>
-            </li>
-            <li className="hover:text-blue-600">
-              <Link href="/Blog">Blog</Link>
             </li>
             <li className="hover:text-blue-600">
               <Link href="/Contact">Contact</Link>
